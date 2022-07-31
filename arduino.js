@@ -30,7 +30,7 @@ let isConnectted = false;
           filters: [{ usbVendorId: 0x2341 }],
         };
 
-        // request from the user an arduino
+        // request an arduino
         port = await navigator.serial.requestPort(requestOptions);
         await port.open({ baudRate: 115200 });
         writer = port.writable.getWriter();
