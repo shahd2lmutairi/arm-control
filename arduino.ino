@@ -37,18 +37,18 @@ void loop() {
   
   String command = getValue(computerText, ' ',0);
 
-    if (command == "right" || command == "رايت" || command == "Right") {
+    if (command == "Right" || command == "right" || command == "رايت") {
       base.write(base_angle -= 20);
     }
-    if (command == "left" || command == "Left" || command == "لفت") {
+    if (command == "Left" || command == "left" || command == "لفت") {
      base.write(base_angle += 20);
     }
 
-    if (command == "top" || command == "توب" || command == "Top") {
+    if (command == "Top" || command == "top" || command == "توب") {
       shoulder.write(shoulder_angle -= 20);
     }
 
-   if (command == "bottom"|| command == "بوتوم" || command == "Bottom") {
+   if (command == "Bottom"|| command == "bottom" || command == "بوتوم") {
      shoulder.write(shoulder_angle += 20);
     }
     Serial.println(command);
